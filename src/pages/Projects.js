@@ -131,7 +131,7 @@ const Projects = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch('/api/projects');
+        const response = await fetch('https://resume-api-hy14.onrender.com/api/projects');
         if (!response.ok) {
           throw new Error('Failed to fetch projects');
         }
